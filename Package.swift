@@ -17,6 +17,9 @@ let excludedFilenames = ["CMakeLists.txt", "README.md"]
 let package = Package(
   
   name: "swift-numerics",
+  platforms: [
+    .watchOS(.v9)
+  ],
   products: [
     .library(name: "ComplexModule", targets: ["ComplexModule"]),
     .library(name: "Numerics", targets: ["Numerics"]),
